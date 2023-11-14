@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  archivify:
+    image: archivify
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    env_file:
+      - variables.env
